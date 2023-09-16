@@ -19,14 +19,14 @@
             theme: {
                 extend: {
                     colors: {
-                        'gradient-start': '#ff8938',
-                        'gradient-end': '#f00',
+                        'paragraph-color': '#12121299',
+                        'fruits-color': '#121212CC',
                     }
                 }
             }
         }
     </script>
-    <title>Tea House Design using DaisyUI</title>
+    <title>Assignment-3 using DaisyUI</title>
     <!-- manrope font will be used in whole body tag -->
     <style>
         .font-lato {
@@ -91,7 +91,7 @@
                             <div class="max-w-md">
                                 <h1 class="mb-5 text-5xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 font-medium">We supply highly quality organic products</p>
-                                <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                                <button class="btn bg-[#F85559] border-none text-white">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                             <div class="max-w-md">
                                 <h1 class="mb-5 text-5xl font-extrabold text-[#FFF]">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 font-medium">We supply highly quality organic products</p>
-                                <button class="btn bg-[#F85559] text-[#FFF]">Shop Now</button>
+                                <button class="btn bg-[#F85559] border-none text-[#FFF]">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                             <div class="max-w-md">
                                 <h1 class="mb-5 text-5xl font-extrabold text-[#FFF]">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 font-medium">We supply highly quality organic products</p>
-                                <button class="btn bg-[#F85559] text-[#FFF]">Shop Now</button>
+                                <button class="btn bg-[#F85559] border-none text-[#FFF]">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             <div class="max-w-md">
                                 <h1 class="mb-5 text-5xl font-extrabold text-[#FFF]">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 font-medium">We supply highly quality organic products</p>
-                                <button class="btn bg-[#F85559] text-[#FFF]">Shop Now</button>
+                                <button class="btn bg-[#F85559] border-none text-[#FFF]">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -154,27 +154,143 @@
                 class="flex lg:flex-row -mt-16 ml-20 justify-center lg:drop-shadow-lg bg-white  py-5 w-10/12 border rounded-lg">
                 <div class="hidden lg:block">
                     <img width="50%" src="./images/fruit1.png" alt="">
-                    <p class="font-medium ">Strawberry</p>
+                    <p class="font-medium text-fruits-color ">Strawberry</p>
                 </div>
                 <div class="hidden lg:block">
                     <img width="50%" src="./images/fruit2.png" alt="">
-                    <p class="font-medium ">Orange</p>
+                    <p class="font-medium fruits-color ">red</p>
                 </div>
                 <div class="hidden lg:block">
                     <img width="50%" src="./images/fruit3.png" alt="">
-                    <p class="font-medium ">Mango</p>
+                    <p class="font-medium fruits-color ">Mango</p>
                 </div>
                 <div class="hidden lg:block">
                     <img width="50%" src="./images/fruit4.png" alt="">
-                    <p class="font-medium ">Strawberry</p>
+                    <p class="font-medium fruits-color ">Strawberry</p>
                 </div>
                 <div class="hidden lg:block">
                     <img width="50%" src="./images/fruit5.png" alt="">
-                    <p class="font-medium ">Mango</p>
+                    <p class="font-medium fruits-color ">Mango</p>
                 </div>
             </div>
         </section>
     </header>
 </body>
+<main class="md:container md:mx-auto">
+    <section>
+        <!-- Deal of the day section -->
+        <div class="lg:flex lg:flex-row text-center lg:gap-24 lg:pb-12">
+            <div class="space-y-6 w-2/4">
+                <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+                <p class="text-font-medium">Contrary to popular belief, is not simply random text. It has roots in a
+                    piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+                <div class="flex flex-row gap-6 items-center">
+                    <div>
+                        <h1 class="font-extrabold text-5xl">29</h1>
+                        <p class="font-medium text-paragraph-color">Days</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-5xl">15</h1>
+                        <p class="font-medium text-paragraph-color">Days</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-5xl">25</h1>
+                        <p class="font-medium text-paragraph-color">Days</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-5xl">08</h1>
+                        <p class="font-medium text-paragraph-color">Days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- deal of the day fruit section -->
+        <div class="lg:flex lg:flex-row lg:gap-6 text-center">
+            <!-- fruits-1 -->
+            <div class="border rounded-lg p-12 space-y-2 text-center">
+                <img src="./images/fruit6.png" alt="">
+                <p class="text-xl font-bold text-center">12.90$-18.85$</p>
+                <hr>
+                <h4 class="text-paragraph-color font-medium">Apples</h4>
+                <p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                </p>
+                <p class="text-center font-medium text-[#F85559]">Details</p>
+            </div>
+            <!-- fruits-2 -->
+            <div class="border rounded-lg p-12 space-y-2 text-center">
+                <img src="./images/fruit7.png" alt="">
+                <p class="text-xl font-bold text-center">12.90$-18.85$</p>
+                <hr>
+                <h4 class="text-paragraph-color font-medium">red</h4>
+                <p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                </p>
+                <p class="text-center font-medium text-[#F85559]">Details</p>
+            </div>
+            <!-- fruits-3 -->
+            <div class="border rounded-lg p-12 space-y-2 text-center">
+                <img src="./images/fruit8.png" alt="">
+                <p class="text-xl font-bold text-center">12.90$-18.85$</p>
+                <hr>
+                <h4 class="text-paragraph-color font-medium">Red Dragon</h4>
+                <p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                </p>
+                <p class="text-center font-medium text-[#F85559]">Details</p>
+            </div>
+            <!-- fruits-4 -->
+            <div class="border rounded-lg p-12 space-y-2 text-center">
+                <img src="./images/fruit9.png" alt="">
+                <p class="text-xl font-bold text-center">12.90$-18.85$</p>
+                <hr>
+                <h4 class="text-paragraph-color font-medium">Banana</h4>
+                <p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                </p>
+                <p class="text-center font-medium text-[#F85559]">Details</p>
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer>
+
+</footer>
 
 </html>
